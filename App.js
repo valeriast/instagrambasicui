@@ -60,7 +60,7 @@ export default function App(){
         showsVerticalScrollIndicato={false}
         keyExtractor={(item) => item.id}
         data={feed}
-        renderItem={(item) => <List data={item}/>}
+        renderItem={({item}) => <List data={item}/>}
       />
     </View>
   );
